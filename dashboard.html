@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #sidebar {
+            width: 220px; /* Lebar diperbesar untuk menampung logo */
+            height: 100%;
+            background-color: #3300ff;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+            border-right: 1px solid #ddd; /* Garis kanan sidebar */
+        }
+        #sidebar img {
+            width: 80%; /* Lebar gambar disesuaikan */
+            display: block;
+            margin: 0 auto 20px; /* Pusatkan gambar dan tambahkan jarak bawah */
+        }
+        #sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+        #sidebar a:hover {
+            background-color: #555;
+        }
+        #content {
+            margin-left: 220px; /* Sesuaikan margin untuk memberi ruang pada gambar */
+            padding: 20px;
+            border-bottom: 1px solid #ddd; /* Garis bawah konten */
+        }
+        #search {
+            margin-top: 20px;
+            text-align: center; /* Pusatkan elemen dalam div */
+        }
+        #search input[type="text"],
+        #search input[type="submit"],
+        #search button {
+            vertical-align: middle;
+        }
+        #search input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        #search input[type="submit"],
+        #search button {
+            background-color: #007bff; /* Warna biru */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px; /* Tambahkan jarak antara tombol */
+        }
+        #search input[type="submit"]:hover,
+        #search button:hover {
+            background-color: #0056b3; /* Warna biru yang lebih gelap saat dihover */
+        }
+        #gambar-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            margin-top: 10px;
+        }
+        .gambar {
+            width: 100%;
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 20px;
+        }
+        .gambar img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .gambar button {
+            background-color: #007bff; /* Warna biru */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px; /* Tambahkan jarak atas antara gambar dan tombol */
+        }
+        .gambar button:hover {
+            background-color: #0056b3; /* Warna biru yang lebih gelap saat dihover */
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <img src="Logo.png" alt="Logo">
+        <a href="#profile">Profil</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="I_found.html">
+           <alt="i-lost">
+            i-lost
+        </a>
+        <a href="#i-found">
+            <alt="i-found">
+            i-found
+        </a>
+        <img src="Motivasi.png" alt="Motivasi">
+    </div>
+    <div id="content">
+        <h1>Dashboard</h1>
+        <!-- Konten dashboard lainnya akan ditampilkan di sini -->
+        <div id="search">
+            <form action="#" method="GET">
+                <input type="text" name="search" placeholder="Cari...">
+            </form>
+        </div>
+        <div id="gambar-container">
+            <div class="gambar">
+                <img src="i-found.jpg" alt="i-found">
+                <button type="button">i-found</button>
+            </div>
+            <div class="gambar">
+                <img src="i-lost.jpg" alt="i-lost">
+                <button type="button">i-lost</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
